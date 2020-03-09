@@ -37,6 +37,66 @@ const siteContent = {
   },
 };
 
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+// section class CTA
+// .cta-text 
+let sectionOneText = document.querySelector(".cta-text h1");
+sectionOneText.textContent = siteContent["cta"]["h1"];
+
+
+// image
+let sectionOneImage = document.getElementById("cta-img");
+sectionOneImage.setAttribute('src', siteContent['cta']['img-src']);
+sectionOneImage.setAttribute('alt', "Company-logo");
+
+// button
+let sectionOneButton = document.querySelector('button');
+sectionOneButton.textContent = siteContent['cta']['button'];
+
+
+
+
+//top-content
+//headings in top-content
+let topContentHeadings = document.querySelectorAll('.top-content h4');
+topContentHeadings[0].textContent = siteContent["main-content"]["features-h4"];
+topContentHeadings[1].textContent = siteContent["main-content"]["about-h4"];
+console.log(topContentHeadings);
+
+//paragraphs in top-content
+let topContentP = document.querySelectorAll('.top-content p');
+topContentP[0].textContent = siteContent["main-content"]["features-content"];
+topContentP[1].textContent = siteContent["main-content"]["about-content"];
+console.log(topContentP);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
