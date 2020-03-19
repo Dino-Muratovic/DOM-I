@@ -51,6 +51,24 @@ navigationBar[2].textContent = siteContent["nav"]["nav-item-3"];
 navigationBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navigationBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navigationBar[5].textContent = siteContent["nav"]["nav-item-6"];
+
+
+
+//nav anchor tags and append prepend
+let navigation = document.querySelector('nav');
+let anotherLink1 = document.createElement('a');
+anotherLink1.textContent = "newLink1";
+anotherLink1.style.color = "black";
+navigation.prepend(anotherLink1);
+
+let anotherLink2 = document.createElement('a');
+anotherLink2.textContent = "newLink2";
+anotherLink2.style.color = "black";
+navigation.append(anotherLink2);
+
+
+
+// console.log(anotherLink);
 // console.log(navigationBar);
 
 
